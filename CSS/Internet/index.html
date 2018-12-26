@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Internet</title>
+    <link rel="stylesheet" href="style.css">
+    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+</head>
+<body>
+    <div id="container">
+        <div id="title-header">
+            <img src="www-images/globe.png" alt="Globe Photo">
+            <h1>The Inter<span class="blue-span">net</span></h1>
+        </div>
+        <h2>The World Wide Web</h2>
+        <div id="side-nav">
+            <p id="par-nav-one">So, what's an <span id="red-span">Internet?</span></p>
+            <p id="par-nav-second">An <span class="blue-span">inter</span>connected <span class="blue-span">Net</span>work of computers all around the world!</p>
+            <a class="link-button" id="link-button-blue" href="">WATCH A VIDEO</a>
+            <a class="link-button" id="link-button-orange" href="">MORE RESOURCES</a>
+            <hr>
+            <div class="img-nav">
+                <p id="p-ad">Reinvent your career in just 14 weeks</p>
+                <img id="img-ad" src="www-images/ninja.png" alt="Ninja">
+                <a class="link-button-ad" href="">Learn more...</a>
+            </div>
+        </div>
+        <div id="content">
+            <div class="contact">
+                <img id="img-home" src="www-images/home.png" alt="Home Icon">
+                <h4>DNS</h4>
+                <div class="number">
+                    <img id="img-phone" src="www-images/phone.png" alt="PhoneIcon">
+                    <div class="number-par">
+                        <p class="par-width">Mon - Fri 9 a.m - 5 p.m. (EST)</p>
+                        <p id="number-blue">855.967.3787</p>
+                        <p class="par-width">International +1.617.963.0555 </p>
+                    </div>   
+                </div>  
+                <hr id="hor-line-contact">
+            </div>
+            <div class="main_content">
+                <h4>Clients and Servers</h4>
+                <p>Computers connected to the <a href="">Web</a> are called <span class="bold">clients</span> and <span class="bold">servers</span>.</p>
+                <ul>
+                    <li><a href="">Clients</a> are the typical Web user's Internet-connected devices (for example, your computer connected to your Wi-Fi, or your phone connected to your mobile network) and <a href="">Web-accesing software</a>available on those devices (usually a web browser like Firefox or Chrome).</li>
+                    <li><a href="">Servers</a> are computers that store <a href="">webpages</a>,<a href="">sites</a>or <a href="">apps</a>. When a client device wants to access webpage, a copy of the webpage is downloaded from the server onto the client machine to be displayed in the user's web browser.</li>
+                </ul>
+                <img id="img-client" src="www-images/client_server.jpg" alt="client-server">
+                <h4>So What Actually Happens?</h4>
+                <ol>
+                    <li>The browser goes to the <a href="">DNS server</a> and finds the real address of the <a href="">server</a> that the website lives on.</li>
+                    <li>The browser sends an <a href="">HTTP request</a> message to the server asking it to send a copy of the website to the client.</li>
+                    <li>If the server approves the client's request, the server sends the client a <a href="">"200 OK" message</a>, which means "Permission granted! Here you go!", and then starts sending the website's files to the browser as a series of small chunks.</li>
+                    <li>The browser assembles the small chunks into a complete website and displays it to you!</li>
+                </ol>
+                <div class="blue-box">
+                    <img id="img-box" src="www-images/html.png" alt="HTML-CSS-JS">
+                    <div class="par-box">
+                        <h4>The Big 3 - HTML, CSS, JavaScript</h4>
+                        <p>While the server can process information in many different languages, the files that they serve to the client are <span id="italic">always</span> going to be some combination of HTML, CSS, and JavaScript!</p>
+                        <p>Learn more about the Big 3 <a href="">here</a>!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+    </div>
+</body>
+</html>
