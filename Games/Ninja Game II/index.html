@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<style>
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			#background {
+				outline: 1px solid black;
+				margin-left: 10px;
+				width: 500px;
+				height: 500px;
+			}
+			h3 {
+				font-family: Arial, Helvetica, sans-serif;
+				margin-left: 10px;
+				height: 30px;
+			}
+		</style>
+	</head>
+<body>
+	<h3>Move the Ninja into the box using keyboard arrows</h3>
+	<div id='background'>
+        <div id='character' style='position:absolute; top:50px; left:50px; background-image: url("img/down1.png"); width:59px; height:86px;'></div>
+	</div>
+	
+    <script type="text/javascript">
+	    var leftValue = 50, topValue = 50, direction = 'down', walkValue = 1;
+
+    	function update(){
+    		document.getElementById("character").style.left = leftValue+"px";
+    		document.getElementById("character").style.top = topValue+"px";
+			document.getElementById("character").style.backgroundImage = 'url("img/'+ direction + walkValue +'.png")';
+    	}
+
+    	document.onkeydown = function(e){
+    		console.log(e);
+			if(walkValue == 1) walkValue = 2;
+			else if(walkValue == 2 ) walkValue = 1;
+
+    		if(e.keyCode == 37 && leftValue > 10) { // LEFT
+    			leftValue = leftValue - 10;
+				direction = "left";
+			}
+    		else if (e.keyCode == 39 && leftValue <= 450) { // RIGHT
+    			leftValue = leftValue + 10; 
+				direction = "right";  		
+    		}
+    		else if (e.keyCode == 40 && topValue <= 430) { // DOWN
+				topValue = topValue + 10;
+				direction = "down";
+    		}
+			else if(e.keyCode == 38 && topValue > 30) { // TOP
+				topValue = topValue - 10;
+				direction = "top";
+			}
+    		update();
+    	}
+    </script>
+</body>
+</html>
